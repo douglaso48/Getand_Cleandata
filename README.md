@@ -136,7 +136,7 @@ There is a divergence of view as to how names should be presented.  Hadley Wickh
 
 I reviewed all the options and finally decided to follow Hadley Wickham's and Jeff Leek's (4) advice and made everything lower case, this aided the data manipulation.  
 With regard to the expansion, I felt that a full expansion made some of the names unwieldy.  I therefore adopted a middle course and replaced "t" with "time, "f" with "frequency" and left "acc", "gyro" and "mag" on the basis that they were readily understandable from their contractions.
-I also looked at the "std" contraction for standard deviation.  Again the contraction "std" is widely used, I felt that to use the full form was rather unwieldy, the other usual contraction is sd.  I therefore fconsidered that no purpose would be achieved by a change.
+I also looked at the "std" contraction for standard deviation.  Again the contraction "std" is widely used, I felt that to use the full form was rather unwieldy, the other usual contraction is sd.  I therefore considered that no purpose would be achieved by a change.
 
 
 The Data Dictionary is within the CodeBook and reference should be made there for the detail of each item.
@@ -148,7 +148,7 @@ This is created in the script by this line:
 
 **output<- output %>% group_by(tester,activity) %>% summarise_each(funs(mean))**
 
-This gives the wide form.  I took the view that this could be further tidied by the extraction of the mean and std variables to their own columns.  This meant melting the data into the narrow form and creating an index to allow casting.  This was achieved by copying the "signal" column to "var" and removing everything but mean or std.  The mean and std were removed from the "signal" column to allow the collapse.  The end product now refelects more closely the original specification which designates certain functions for specific signals.
+This gives the wide form.  I took the view that this could be further tidied by the extraction of the mean and std variables to their own columns.  This meant melting the data into the narrow form and creating an index to allow casting.  This was achieved by copying the "signal" column to "var" and removing everything but mean or std.  The mean and std were removed from the "signal" column to allow the collapse.  The end product now reflects more closely the original specification which designates certain functions for specific signals.
 
 This therefore produces a tidy dataset that complies with Hadley Wickham's explanation of Codd's 3rd normal form (Codd1990) (7).  In that:
 
@@ -170,8 +170,8 @@ From the tidyset.txt:<br/>
 any(is.na(tidy))
 [1] FALSE
 
-A spot check confirmed that the values seen at stage 4 were the same for stage 5.
-
+A spot check confirmed that the values seen at stage 4 were the same for stage 5.<br/>
+A check on the Discussion Form confirmed that the values were as seen by others.(5)
 <br/>
 #####ACKNOWLEDGEMENTS
 1. Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
